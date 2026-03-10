@@ -1,0 +1,42 @@
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1.025);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0% {
+        clip-path: var(--animation-initial-polygon);
+    }
+
+    50% {
+        clip-path: var(--animation-mid-polygon);
+    }
+
+    100% {
+        clip-path: var(--animation-initial-polygon);
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+        ;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

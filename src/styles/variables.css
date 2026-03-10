@@ -1,0 +1,47 @@
+@font-face {
+    src: url('../assets/fonts/DepartureMono-Regular.otf');
+    font-family: 'DepartureMono';
+}
+
+:root {
+    font-family: 'DepartureMono';
+    font-size: small;
+    --dark: #1B1A18;
+    --light: #F3EEEA;
+    --dark-mute: #242320;
+    --light-mute: #EAE2DB;
+
+    --bg-color: var(--light);
+    --bg-sub: var(--light-mute);
+    --text-main: var(--dark);
+    --bg-inverted: var(--text-main);
+    --text-inverted: var(--bg-color);
+    --border-color: rgba(27, 26, 24, 0.5);
+    --grid-line: rgba(20, 20, 20, 0.1);
+    --tag-color: rgba(10, 10, 10, 0.7);
+    --tag-text: #DDDDDD;
+    --transition: 0.15s;
+
+    --animation-initial-polygon: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    --animation-mid-polygon: polygon(9% 10%, 89% 14%, 84% 93%, 9% 87%);
+}
+
+:root {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    transition: var(--transition);
+    background-image:
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 11px 11px;
+}
+
+[data-theme='dark'] {
+    --bg-color: var(--dark);
+    --bg-sub: var(--dark-mute);
+    --text-main: var(--light);
+    --border-color: rgba(243, 238, 234, 0.5);
+    --grid-line: rgba(180, 150, 130, 0.1);
+    --tag-color: #DDDDDD;
+    --tag-text: rgba(10, 10, 10, 0.7);
+}
