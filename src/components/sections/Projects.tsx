@@ -8,7 +8,7 @@ export default function Projects() {
                     <h3>Asakarya</h3>
                     <div className='project-card'>
                         <a href="https://asakarya.vercel.app" target='blank'>
-                            <img src="./src/assets/img/asakarya_sq.png" alt="Asakarya screenshot" />
+                            <img src="/asakarya_sq.png" alt="Asakarya screenshot" />
                         </a>
                         <div className='project-details'>
                             <p>A crowdfunding app for the final project of SYNRGY academy bootcamp</p>
